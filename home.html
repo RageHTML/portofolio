@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>home</title>
+    <style>
+        * {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            color: #ffffff;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        body { background-color: rgb(0, 0, 0);}
+
+        .menu_buttons {
+            gap: 25px;
+            display: flex;
+            flex-direction: row;
+            padding: 1.5rem 2rem;
+            justify-content: center;
+            background: none;
+            font-size: 2rem;
+        }
+
+        .bg-container {
+            border: none;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .bg-image {
+            width: 100%;
+            height: 130vh; 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: none;
+        }
+
+        .home_texts p{
+            display: flexbox;
+            position: absolute;
+            color: white;
+            text-shadow: 5px 1px 6px rgb(95, 93, 93); 
+            border-left: 5px solid #ffffff;
+            border-left-style: solid;
+            padding-left: 1rem; 
+            transition: all 0.5s ease;
+        }
+
+    
+
+        .text_001 {
+            top: 16rem;  
+            left: 41rem; 
+            font-size: 1.4rem;
+        }
+
+        .text_001:hover {
+            padding-left: 2rem;
+        }
+
+
+        .text_002 {
+            top: 75rem;
+            left: 3rem;
+            font-size: 1.8rem;
+        }
+
+        .text_002_1 {
+            top: 80rem;
+            left: 3rem;
+            font-size: 0.7rem;
+        }
+
+        .artist_info {
+            text-underline-offset: 5px;
+        }
+
+        .text_002:hover {
+            padding-left: 2rem;
+        }
+
+        .cactus_border {
+          
+        }
+
+        .cactus_jack_logo {
+            top: 110rem;
+            left: 20rem;
+            position: absolute;
+            transition: all 0.5s ease;
+            padding-right: -1rem;
+            border-right: 2px solid;
+            
+        }
+
+        .cactus_jack_logo:hover {
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="menu_buttons">
+        <table class="table_button">
+            <td>
+                <tr class="button"><a href="sobre.html">SOBRE</a></tr>
+                <tr class="button"><a href="home.html">HOME</a></tr>
+                <tr class="button"><a href="albums.html">ÀLBUMS</a></tr>
+            </td>
+        </table>
+    </div>
+    <div class="bg-container">
+        <div class="bg-image" style="background-image: url(images/home_images/travis_001.JPEG);"></div>
+        <div class="bg-image" style="background-image: url(images/home_images/travis_002.JPEG);"></div>
+        <div class="bg-image" style="background-image: url(images/home_images/travis_003.JPEG);"></div>
+    </div>
+    <div class="home_texts">
+        <p class="text_001"><b>Jacques Berman Webster II</b> mais conhecido como <b>Travis Scott</b>, nascido em 30 de abril de 1991 em Houston, Texas nos Estados Unidos</p>
+        <p class="text_002"><b>Travis</b> explicou que escolheu "Travis" em homenagem<br> a um tio querido e "Scott" como referência a <a class="artist_info" href="#">Kid Cuti</a></p>
+        <p class="text_002_1">Fonte: Entrevista com a <b>Complex</b>(2013)</p>
+    </div>
+    <div class="cactus_jack_box" >
+    <img class="cactus_jack_logo" src="images/home_images/cactus_logo.svg.JPEG">
+    <p class="cactus_text">O Selo, a marca e o coletivo criativo de Travis Scott, criado em 2017, não é apenas um selo musical, mas um coletivo multidisciplinar: Gravadora, Marca de Moda, Empresa Criativa</p>
+    </div>
+</body>
+</html>
