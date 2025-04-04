@@ -1,0 +1,172 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: none;
+    font-style: italic;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Barra de navegação */
+.barra_nav {
+    position: fixed; 
+    display: flex;
+    right: 0; /* Alterado para right em vez de transform */
+    padding: 2rem;
+    gap: 2rem;
+    z-index: 100;
+    top: 0;
+}
+
+.link_nav {
+    position: relative;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.link_nav:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease; /* Corrigido: faltava o 's' em 0.3 */
+}
+
+.link_nav:hover::after {
+    width: 100%;
+}
+
+/* Background */
+.background_box {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-image {
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Container de texto */
+.texto_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.texto_box p {
+    pointer-events: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    position: absolute;
+    background-color: rgba(35, 35, 35, 0.666); /* Adicionado para melhor legibilidade */
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Textos específicos */
+.nome_text {
+    width: 36rem;
+    max-width: 90%;
+    top: 12rem;
+    left: 2%;
+    transform: translateX(100%);
+    font-size: 1rem;
+    border-left: 2px solid;
+}
+
+.motivo_text {
+    width: 40rem;
+    max-width: 90%;
+    top: 160vh; 
+    left: 5%;
+    font-size: 1.3rem;
+    border-left: 2px solid;
+    padding-left: 1rem;
+}
+
+.fonte_text {
+    width: 15rem;
+    max-width: 90%;
+    top: calc(160vh + 6rem); 
+    left: 5%;
+    font-size: 0.7rem;
+    border-left: 2px solid;
+    padding-left: 1rem;
+}
+
+/* Cactus box */
+.cactus_box {
+    position: fixed; /* Alterado para fixed */
+    top: 75vh; /* Posiciona na parte inferior */
+    right: 0; /* Posiciona à direita */
+    z-index: 10;
+    width: 150px;
+}
+
+.cactus_logo {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+    transition: transform 0.3s ease;
+}
+
+.cactus_logo:hover {
+    transform: scale(1.1);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .barra_nav {
+        width: 100%;
+        justify-content: center;
+        right: auto;
+        padding: 1rem;
+    }
+    
+    .nome_text,
+    .motivo_text,
+    .fonte_text,
+    .cactus_text {
+        width: 90% !important;
+        left: 5% !important;
+        right: 5% !important;
+        transform: none !important;
+    }
+    
+    .cactus_box {
+        bottom: 2rem;
+        right: 2rem;
+        width: 100px;
+    }
+}

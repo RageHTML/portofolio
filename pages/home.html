@@ -3,39 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/home.css" >
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="style" href="/css/style.css">
-    <title>home</title>
-    <style>
-       
-
-    </style>
+    <title>Travis Scott</title>
 </head>
 <body>
-    <div class="menu_buttons">
-        <table class="table_button">
-            <td>
-                <tr class="button"><a href="/pages/sobre.html">SOBRE</a></tr>
-                <tr class="button"><a href="/pages/home.html">HOME</a></tr>
-                <tr class="button"><a href="/pages/albums.html">ÀLBUMS</a></tr>
-            </td>
-        </table>
-    </div>
-    <div class="bg-container">
-        <div class="bg-image" style="background-image: url(images/home_images/travis_001.JPEG);"></div>
-        <div class="bg-image" style="background-image: url(images/home_images/travis_002.JPEG);"></div>
-        <div class="bg-image" style="background-image: url(images/home_images/travis_003.JPEG);"></div>
-    </div>
-    <div class="home_texts">
-        <p class="text_001"><b>Jacques Berman Webster II</b> mais conhecido como <b>Travis Scott</b>, nascido em 30 de abril de 1991 em Houston, Texas nos Estados Unidos</p>
-        <p class="text_002"><b>Travis</b> explicou que escolheu "Travis" em homenagem<br> a um tio querido e "Scott" como referência a <a class="artist_info" href="#">Kid Cuti</a></p>
-        <p class="text_002_1">Fonte: Entrevista com a <b>Complex</b>(2013)</p>
-    </div>
-    <div class="cactus_jack_box" >
-    <img class="cactus_jack_logo" src="images/home_images/cactus_logo.svg.JPEG">
-    <p class="cactus_text">O Selo, a marca e o coletivo criativo de Travis Scott, criado em 2017, não é apenas um selo musical, mas um coletivo multidisciplinar: Gravadora, Marca de Moda, Empresa Criativa</p>
-    </div>
+    <div class="main-container">
+        <nav class="barra_nav">
+            <a href="sobre.html" class="link_nav">Sobre</a>
+            <a href="home.html" class="link_nav">Inicio</a>
+            <a href="albums.html" class="link_nav">Álbums</a>
+        </nav>
+        <div class="background_box">
+            <div class="bg-image" style="background-image: url(../images/home_images/travis_001.JPEG);"></div>
+            <div class="bg-image" style="background-image: url(../images/home_images/travis_002.JPEG);"></div>
+            <div class="bg-image" style="background-image: url(../images/home_images/travis_003.JPEG);"></div>
+        </div>
+        <div class="texto_box">
+            <p class="nome_text"><b>Jacques Berman Webster II</b> mais conhecido como <b>Travis Scott</b>, nascido em 30 de abril de 1991 em Houston, Texas nos Estados Unidos</p>
+            <p class="motivo_text"><b>Travis</b> explicou que escolheu "<b>Travis</b>" em homenagem a um tio querido e "<b>Scott</b>" como referência a <a class="artist_info" href="#">Kid Cuti</a></p>
+            <p class="fonte_text">Fonte: Entrevista com a <b>Complex</b>(2013)</p>
+        </div>
+        <div class="cactus_box" >
+            <img class="cactus_logo" alt="Cactus Logo" src="../images/home_images/cactus_logo.svg.JPEG">
+        </div>
+        <scrpt src="../js/main.js"></scrpt>
+    </div>       
 </body>
 </html>
