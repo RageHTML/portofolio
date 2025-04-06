@@ -39,6 +39,8 @@ body {
     display: inline-block;
 }
 
+
+
 .link_nav:after {
     content: '';
     position: absolute;
@@ -50,40 +52,76 @@ body {
     transition: width 0.3s ease; 
 }
 
-.main_head {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15vh;
-    padding-left: 2rem;
-}
 
+/* Estilo Album */
 
-.album_rodeo {
+.album_box {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
     align-items: flex-start;
 }
 
-.album_astro {
-    display: flex;
-    align-items: flex-start;
+.album_title {
+    width: 100%;
+    margin-bottom: 15px;
+    order: -1;
+    font-size: 2rem;
 }
 
-.album_jackboys {
+.album_content {
     display: flex;
-    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.album_utopia {
-    display: flex;
-    align-items: flex-start;
+.album_facts {
+    flex: 1;
+    min-width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-
+.album_text {
+    margin-bottom: 15px;
+}
 .image_album {
     width: 250px;
     height: 250px;
     border-radius: 25px;
     border-left: 10px solid #ffffff;
 }
+
+.album_rodeo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.album_astro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.album_jackboys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.album_utopia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
 
