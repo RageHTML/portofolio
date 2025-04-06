@@ -2,7 +2,7 @@
     font-family: "Roboto", sans-serif;
     font-optical-sizing: none;
     font-style: italic;
-    color: #ffffff;
+    color: #ffffff; /* Cor do texto da pagina */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -71,7 +71,6 @@ body {
     position: relative;
 }
 
-/* Container de texto */
 .texto_box {
     position: absolute;
     top: 0;
@@ -88,12 +87,11 @@ body {
     overflow-wrap: break-word;
     hyphens: auto;
     position: absolute;
-    background-color: rgba(35, 35, 35, 0.666); /* Adicionado para melhor legibilidade */
     padding: 1rem;
     border-radius: 5px;
+    background-color: rgba(25, 25, 25, 0.555); 
 }
 
-/* Textos específicos */
 .nome_text {
     width: 36rem;
     max-width: 90%;
