@@ -8,59 +8,48 @@
     <title>Travis Scott - Albums</title>
 </head>
 <body>
-    <div class="menu_buttons">
-        <nav class="barra_nav">
-            <a href="sobre.html" class="link_nav">Sobre</a>
-            <a href="home.html" class="link_nav">Inicio</a>
-            <a href="albums.html" class="link_nav">Álbums</a>
-        </nav>
-    </div>
-    <div class="album_box">
-        <div class="album_rodeo">
-            <div class="album_content">
-                <img src="../images/albums_cape/rodeo.JPEG"  class="image_album"  alt="capa_rodeo">
-                <h2 class="album_title">Rodeo</h2>
-                <ul ckass="album_facts">
-                    <li class="album_text"><strong>Sobre:</strong> Lançado em 2017 traz um estilo musical  de trap psicodélico, rap melódico e influências de rock.</li>
-                    <li class="album_text"><strong>Curiosidades:</strong> O álbum é uma homenagem ao parque de diversões AstroWorld de Houston, que fechou em 2005.</li> 
-                    <li class="album_text"><strong>Música mais Marcante:</strong> "SICKO MODE" </li>
-                </ul>
-            </div>
-        </div>
-        <div class="album_astro">
-            <div class="album_content">
-                <img src="../images/albums_cape/astroworld.JPEG" class="image_album" alt="capa_astroworld">
-                <h2 class="album_title">Astroworld</h2>
-                <ul ckass="album_facts">
-                    <li class="album_text"><strong>Sobre:</strong> Lançado em 2017 traz um estilo musical  de trap psicodélico, rap melódico e influências de rock.</li>
-                    <li class="album_text"><strong>Curiosidades:</strong> O álbum é uma homenagem ao parque de diversões AstroWorld de Houston, que fechou em 2005.</li> 
-                    <li class="album_text"><strong>Música mais Marcante:</strong> "SICKO MODE" </li>
-                </ul>
-            </div>
-            
-        </div>
-        <div class="album_jackboys">
-            <div class="album_content">
-                <img src="../images/albums_cape/jackboys.JPEG" class="image_album" alt="capa_jackboys">
-                <h2 class="album_title">Jackboys</h2>
-                <ul ckass="album_facts">
-                    <li class="album_text"><strong>Sobre:</strong> Lançado em 2019 continua com o estilo musical de trap psicodélico, diferente de seu Album antecessor usa batidas brutas e mais colaborações com artistas.</li>
-                    <li class="album_text"><strong>Curiosidades:</strong> Foi lançado como uma "coletânea" do selo <a href="#cactus_text">Cactus Jack</a>, sem aviso prévio.</li> 
-                    <li class="album_text"><strong>Música mais Marcante:</strong> "HIGHEST IN THE ROOM" </li>
-                </ul>
-            </div>
-        </div>
-        <div class="album_utopia">
-            <div class="album_content">
-                <img src="../images/albums_cape/utopia.JPEG" class="image_album" alt="capa_utopia">
-                <h2 class="album_title">UTOPIA</h2>
-                <ul ckass="album_facts">
-                    <li class="album_text"><strong>Sobre:</strong> Lançado em 2023, traz um estilo musical com uma mistura de trap, rock progressivo e eletrônico.</li>
-                    <li class="album_text"><strong>Curiosidades:</strong> Travis promoveu o álbum com caixas misteriosas espalhadas em desertos e cidades.</li> 
-                    <li class="album_text"><strong>Música mais Marcante:</strong> "FE!N" (ft. Playboi Carti) </li>
-                </ul>
-            </div>
-        </div>    
+    <nav aria-label="Menu principal" class="barra_nav">
+        <a class="barra_botao" href="sobre.html" aria-current="page">Sobre</a>
+        <a class="barra_botao" href="inicio.html" aria-current="page">Inicio</a>
+        <a class="barra_botao" href="albums.html" aria-current="page" >Álbums</a>
+    </nav>
+    <main class="album_grind">
+        <article class="album_card">
+            <h1 class="album_card-titulo">Rodeo</h1>
+            <img src="../images/albums_cape/rodeo.JPEG"  class="album_card-capa"  alt="Capa do álbum - Rodeo - Travis Scott'" loading="lazy">
+            <ul class="album_info">
+                <li class="album_info-item_sobre"><strong>Sobre:</strong> Lançado em 2017 traz um estilo musical  de trap psicodélico, rap melódico e influências de rock.</li>
+                <li class="album_info-item_curiosidade"><strong>Curiosidades:</strong> O álbum é uma homenagem ao parque de diversões AstroWorld de Houston, que fechou em 2005.</li> 
+                <li class="album_musica"><strong>Música mais Marcante:</strong> "SICKO MODE" </li>
+            </ul>
+        </article>
+        <article class="album_card">
+            <h1 class="album_card-titulo">Astroworld</h1>
+            <img src="../images/albums_cape/astroworld.JPEG" class="album_card-capa" alt="Capa do álbum - AstroWorld - Travis Scott" loading="lazy">
+            <ul class="album_info">
+                <li class="album_info-item_sobre"><strong>Sobre:</strong> Lançado em 2017 traz um estilo musical  de trap psicodélico, rap melódico e influências de rock.</li>
+                <li class="album_info-item_curiosidade"><strong>Curiosidades:</strong> O álbum é uma homenagem ao parque de diversões AstroWorld de Houston, que fechou em 2005.</li> 
+                <li class="album_info-item_musica"><strong>Música mais Marcante:</strong> "SICKO MODE" </li>
+            </ul>
+        </article>
+        <article class="album_card">
+            <h1 class="album_card-titulo">Jackboys</h1>
+            <img src="../images/albums_cape/jackboys.JPEG" class="album_card-capa" alt="Capa do álbum - Jackboys - Travis Scott" loading="lazy">
+            <ul class="album_info">
+                <li class="album_info-item_sobre"><strong>Sobre:</strong> Lançado em 2019 continua com o estilo musical de trap psicodélico, diferente de seu Album antecessor usa batidas brutas e mais colaborações com artistas.</li>
+                <li class="album_info-item_curiosidade"><strong>Curiosidades:</strong> Foi lançado como uma "coletânea" do selo <a href="#cactus_text">Cactus Jack</a>, sem aviso prévio.</li> 
+                <li class="album_info-item_musica"><strong>Música mais Marcante:</strong> "HIGHEST IN THE ROOM" </li>
+            </ul>
+        </article>
+        <article class="album_card">
+            <h1 class="album_card-titulo">UTOPIA</h1>
+            <img src="../images/albums_cape/utopia.JPEG" class="album_card-capa" alt="Capa do álbum - UTOPIA - Travis Scott" loading="lazy">
+            <ul class="album_info">
+                <li class="album_info-item_sobre"><strong>Sobre:</strong> Lançado em 2023, traz um estilo musical com uma mistura de trap, rock progressivo e eletrônico.</li>
+                <li class="album_info-item_curiosidade"><strong>Curiosidades:</strong> Travis promoveu o álbum com caixas misteriosas espalhadas em desertos e cidades.</li> 
+                <li class="album_info-item_musica"><strong>Música mais Marcante:</strong> "FE!N" (ft. Playboi Carti) </li>
+            </ul>
+        </article>    
     </div>
 </body>
 </html>
