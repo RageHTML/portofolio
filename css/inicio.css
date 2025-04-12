@@ -2,10 +2,9 @@
     font-family: "Roboto", sans-serif;
     font-optical-sizing: none;
     font-style: italic;
-    color: #ffffff; /* Cor do texto da pagina */
+    color: #ffffff;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body { 
@@ -18,7 +17,7 @@ body {
 }
 
 /* Barra de navegação */
-.barra_nav {
+.barra-nav {
     position: fixed; 
     display: flex;
     right: 0; /* Alterado para right em vez de transform */
@@ -28,7 +27,7 @@ body {
     top: 0;
 }
 
-.link_nav {
+.barra-btn {
     position: relative;
     padding: 0.5rem 0;
     font-size: 1.5rem;
@@ -38,7 +37,7 @@ body {
     display: inline-block;
 }
 
-.link_nav:after {
+.barra-btn:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -49,94 +48,58 @@ body {
     transition: width 0.3s ease; /* Corrigido: faltava o 's' em 0.3 */
 }
 
-.link_nav:hover::after {
+.barra-btn:hover::after {
     width: 100%;
 }
 
-/* Background */
-.background_box {
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
+
+/* Background e textos */
+
+/* Mantenha todos os estilos existentes e adicione: */
+
+.content-grid {
+    display: grid;
+    grid-template-rows: 100vh 100vh 100vh; /* 3 linhas com 100vh cada */
+    margin-top: 80px; /* Espaço para a navbar */
 }
 
-.bg-image {
-    width: 100%;
-    height: 120vh;
+.content-section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.texto_box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
+.text-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 80%;
+    text-align: center;
 }
 
-.texto_box p {
-    pointer-events: auto;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    position: absolute;
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: rgba(25, 25, 25, 0.555); 
-}
-
-.nome_text {
-    width: 36rem;
-    max-width: 90%;
-    top: 12rem;
-    left: 2%;
-    transform: translateX(100%);
-    font-size: 1rem;
-    border-left: 2px solid;
-}
-
-.motivo_text {
-    width: 40rem;
-    max-width: 90%;
-    top: 160vh; 
-    left: 5%;
-    font-size: 1.3rem;
-    border-left: 2px solid;
-    padding-left: 1rem;
-}
-
-.fonte_text {
-    width: 15rem;
-    max-width: 90%;
-    top: calc(160vh + 6rem); 
-    left: 5%;
-    font-size: 0.7rem;
-    border-left: 2px solid;
-    padding-left: 1rem;
-}
-
-/* Cactus box */
-.cactus_box {
-    position: fixed; /* Alterado para fixed */
-    top: 75vh; /* Posiciona na parte inferior */
-    right: 0; /* Posiciona à direita */
-    z-index: 10;
-    width: 150px;
+.info-item_nome,
+.info-item_motivo,
+.info-item_fonte {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.6;
 }
 
 .cactus_logo {
-    width: 100%;
-    height: auto;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
-    transition: transform 0.3s ease;
+    size: 2rem;
 }
+
+
+
+
+/* Cactus box */
+
+
+
 
 .cactus_logo:hover {
     transform: scale(1.1);
